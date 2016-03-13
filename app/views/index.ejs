@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>GitDash</title>
+    <meta name="description" content="GitHub team dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      var CLIENT_ID = "<%= clientId %>";
+      var REDIRECT_URI = window.location.origin + "<%= redirectPath %>";
+      var SCOPE = 'repo';
+    </script>
+
+    <% if (env === 'production') { %>
+      <script async src="/main.min.js"></script>
+    <% } else { %>
+      <script src="/main.js"></script>
+    <% } %>
+  </body>
+</html>

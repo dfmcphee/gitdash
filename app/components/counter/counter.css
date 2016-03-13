@@ -1,0 +1,34 @@
+.counter {
+  display: flex;
+  flex-direction: column;
+  width: 14rem;
+  text-align: center;
+}
+
+.counter__circle {
+  flex: 0 1 auto;
+  display: flex;
+  background: blue;
+  border-radius: 50%;
+  height: 14rem;
+  width: 14rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter__number {
+  flex: 0 1 auto;
+  font-family: Helvetica, sans-serif;;
+  font-size: 6rem;
+  color: white;
+}
+
+.counter__label {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+.counter__link {
+  font-size: 1.2rem;
+  margin: 0;
+}
